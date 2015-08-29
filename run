@@ -1,0 +1,5 @@
+#!/bin/sh
+
+for browser in firefox chrome; do
+    nosetests  --with-selenium-driver --selenium-driver=$browser ./test_wikia.py
+done
